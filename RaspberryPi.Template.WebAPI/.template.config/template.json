@@ -1,0 +1,20 @@
+﻿{
+  "author": "Jeremy Lindsay <https://jeremylindsayni.wordpress.com>",
+  "classifications": [ "IoT", "WebAPI" ], 
+  "name": "Default ASP.NET Web API",
+  "identity": "IoT.Core Web API",
+  "shortName": "coreiotwebapi",
+  "tags": {
+    "language": "C#"
+  },
+  "sourceName": "coreiot",
+  "symbols": {
+    "runtime": {
+      "type": "parameter",
+      "datatype": "string",
+      "replaces": "RUNTIME-FRAMEWORK-VERSION",
+      "defaultValue": "2.0.0",
+      "description": "The .NET Core runtime framework to use."
+    }
+  }
+}

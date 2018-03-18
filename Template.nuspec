@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>RaspberryPi.Template.WebApi</id>
+    <version>0.1.0</version>
+    <title>Raspberry Pi 3 project template for ASP.NET Core 2 Web API</title>
+    <authors>Jeremy Lindsay (@jeremylindsayni)</authors>
+    <owners>Jeremy Lindsay (@jeremylindsayni)</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/jeremylindsayni/RaspberryPiTemplate/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/jeremylindsayni/RaspberryPiTemplate</projectUrl>
+    <description>An empty project template for .NET Core 2 IoT applications deployed to the Raspberry Pi 3.
+
+I wrote about how to use this template and install it into your development environment in this post:
+
+https://jeremylindsayni.wordpress.com/2017/03/21/how-to-a-net-core-template-to-create-a-new-project-from-the-command-line-with-dotnet-new-i/</description>
+    <summary>An empty project template for .NET Core 2 IoT applications deployed to the Raspberry Pi 3.</summary>
+    <copyright>Copyright 2017: Jeremy Lindsay. All rights reserved.</copyright>
+    <language>en-US</language>
+  </metadata>
+  <files>
+    <file src="content\.template.config\template.json" target="content\.template.config\template.json" />
+    <file src="content\coreiot\coreiot\Controllers\ValuesController.cs" target="content\coreiot\coreiot\Controllers\ValuesController.cs" />
+    <file src="content\coreiot\coreiot\Properties\launchSettings.json" target="content\coreiot\coreiot\Properties\launchSettings.json" />
+    <file src="content\coreiot\coreiot\wwwroot\_._" target="content\coreiot\coreiot\wwwroot\_._" />
+    <file src="content\coreiot\coreiot\appsettings.Development.json" target="content\coreiot\coreiot\appsettings.Development.json" />
+    <file src="content\coreiot\coreiot\appsettings.json" target="content\coreiot\coreiot\appsettings.json" />
+    <file src="content\coreiot\coreiot\coreiot.csproj" target="content\coreiot\coreiot\coreiot.csproj" />
+    <file src="content\coreiot\coreiot\Program.cs" target="content\coreiot\coreiot\Program.cs" />
+    <file src="content\coreiot\coreiot\Startup.cs" target="content\coreiot\coreiot\Startup.cs" />
+    <file src="content\coreiot\build.cake" target="content\coreiot\build.cake" />
+    <file src="content\coreiot\coreiot.sln" target="content\coreiot\coreiot.sln" />
+    <file src="content\coreiot\README.txt" target="content\coreiot\README.txt" />
+  </files>
+</package>
