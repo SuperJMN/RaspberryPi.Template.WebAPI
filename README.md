@@ -1,4 +1,4 @@
-# A Raspberry Pi Template for ASP.NET Core 2 Web APIs
+d# A Raspberry Pi Template for ASP.NET Core 2 Web APIs
 An empty project template for .NET Core 2 IoT applications deployed to the Raspberry Pi.
 
 ## How to install the template
@@ -27,4 +27,4 @@ Terribly easy!
 - Create an folder in your Raspberry Pi according to the deployment path (`/home/pi/DotNet/[YourAppName]`)
 - From the project folder run the build.ps1 script from **PowerShell**
 
-**NOTICE:** The build script requires [PuTTY](https://putty.org/) to be installed. It's use to transfer files to the Raspberry Pi using SSH
+**NOTICE:** The build script requires [PuTTY](https://putty.org/) to be installed. It's use to transfer files to the Raspberry Pi using SSH.
