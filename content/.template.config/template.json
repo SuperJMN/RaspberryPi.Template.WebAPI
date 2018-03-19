@@ -1,13 +1,13 @@
 ﻿{
-  "author": "Jeremy Lindsay <https://jeremylindsayni.wordpress.com>",
+  "author": "José Manuel Nieto (@SuperJMN)",
   "classifications": [ "IoT", "WebAPI" ], 
-  "name": "Default ASP.NET Web API",
-  "identity": "IoT.Core Web API",
-  "shortName": "coreiotwebapi",
+  "name": "ASP.NET Web API for Raspbery Pi for Linux",
+  "identity": "IoT.Core Web API (Linux)",
+  "shortName": "rpiwebapi",
   "tags": {
     "language": "C#"
   },
-  "sourceName": "coreiot",
+  "sourceName": "RaspbianWebApi",
   "symbols": {
     "runtime": {
       "type": "parameter",

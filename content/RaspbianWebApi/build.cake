@@ -1,25 +1,28 @@
 ﻿#addin "Cake.Putty"
 
+// REPLACE WITH YOUR VALUES _________________________________________________________
+
+var appFolder=@"/home/pi/DotNet/RaspbianWebApi";		
+var piHostname="raspberrypi";
+var piUser = "pi";
+
+// __________________________________________________________________________________
+
+
+
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 var framework = Argument("framework", "netcoreapp2.0");
 
 ///////////////////////////////////////////////////////////////////////
-// ARGUMENTS (WITH DEFAULT PARAMETERS FOR WIN 10 IOT CORE)
-///////////////////////////////////////////////////////////////////////
-//var runtime = Argument("runtime", "win10-arm");
-//var destinationIp = Argument("destinationPi", "<<the-pi-ip-address>>");
-//var destinationDirectory = Argument("destinationDirectory", @"<<the-deployment-folder>>");
-
-///////////////////////////////////////////////////////////////////////
 // ARGUMENTS (WITH DEFAULT PARAMETERS FOR LINUX (Ubuntu 16.04, Raspbian Jessie, etc)
 ///////////////////////////////////////////////////////////////////////
 var runtime = Argument("runtime", "linux-arm");
-var destinationIp = Argument("destinationPi", "<<IP HOSTNAME OR IP ADDRESS>>");
-var destinationDirectory = Argument("destinationDirectory", @"<<DEPLOYMENT FOLDER>>");
-var username = Argument("username", "<<RASPBIAN USERNAME>>");
+var destinationIp = Argument("destinationPi", piHostname);
+var destinationDirectory = Argument("destinationDirectory", appFolder);
+var username = Argument("username", piUser);
 var sessionname = Argument("sessionname", "<<YOUR SAVED PUTTY SESSION NAME>");
-var executableName = Argument("executableName", "coreiot");
+var executableName = Argument("executableName", "RaspbianWebApi");
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>RaspberryPi.Template.WebApi</id>
+    <version>0.2.0</version>
+    <title>Raspberry Pi 3 project template for ASP.NET Core 2 Web API</title>
+    <authors>José Manuel Nieto (@SuperJMN)</authors>
+    <owners>José Manuel Nieto (@SuperJMN)</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/SuperJMN/RaspberryPi.Template.WebAPI/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/SuperJMN/RaspberryPi.Template.WebAPI</projectUrl>
+    <description>Template to create an ASP.NET Core 2.0 application for Raspberry Pi</description>
+    <summary>An empty project template for .NET Core 2 IoT applications deployed to the Raspberry Pi 3.</summary>
+    <language>en-US</language>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata> 
+</package>
