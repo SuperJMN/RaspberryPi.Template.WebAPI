@@ -1,4 +1,4 @@
-d# A Raspberry Pi Template for ASP.NET Core 2 Web APIs
+## A Raspberry Pi Template for ASP.NET Core 2 Web APIs
 An empty project template for .NET Core 2 IoT applications deployed to the Raspberry Pi.
 
 ## How to install the template
