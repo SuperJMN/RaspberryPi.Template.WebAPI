@@ -95,6 +95,16 @@ Task("Deploy")
         }
         else
         {
+            var createDirCommand = "mkdir -p " + destinationDirectory;
+
+            StartProcess("plink", new ProcessSettings {
+            		Arguments = new ProcessArgumentBuilder()
+                	.Append(@"-load " + sessionname)
+			.Append("-l " + username)
+                	.Append(createDirCommand)
+            	}
+            );
+
             var destination = destinationIp + ":" + destinationDirectory;
             var fileArray = files.Select(m => @"""" + m.ToString() + @"""").ToArray();
             Pscp(fileArray, destination, new PscpSettings
@@ -115,6 +125,16 @@ Task("DeployWithPuTTYSession")
     {
         var files = GetFiles("./publish/*");
         
+            var createDirCommand = "mkdir -p " + destinationDirectory;
+
+            StartProcess("plink", new ProcessSettings {
+            		Arguments = new ProcessArgumentBuilder()
+                	.Append(@"-load " + sessionname)
+			.Append("-l " + username)
+                	.Append(createDirCommand)
+            	}
+            );
+
         var destination = sessionname + ":" + destinationDirectory;
         var fileArray = files.Select(m => @"""" + m.ToString() + @"""").ToArray();
         Pscp(fileArray, destination, new PscpSettings
